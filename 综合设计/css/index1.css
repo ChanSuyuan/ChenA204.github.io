@@ -1,0 +1,1584 @@
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: "SWL2";
+            }
+            
+            .div {
+                display: block;
+            }
+            
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            div,
+            ol,
+            ul,
+            li,
+            dl,
+            dt,
+            dd,
+            table,
+            caption,
+            tr,
+            th,
+            td,
+            span,
+            p,
+            a,
+            b,
+            u,
+            i,
+            em,
+            img,
+            iframe,
+            fieldset,
+            form,
+            label,
+            legend,
+            input,
+            button,
+            select,
+            textarea {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font: 'SWL2';
+                color: #333;
+                background-color: rgba(97, 96, 96, 0.1);
+                margin: auto;
+            }
+            
+            img {
+                position: relative;
+            }
+            
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            
+            ul {
+                display: block;
+                list-style-type: disc;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+            }
+            
+            li {
+                display: list-item;
+                text-align: -webkit-match-parent;
+            }
+            /* ======================================HEAD==================================================== */
+            
+            .head-container {
+                min-width: 1250px;
+                height: 100px;
+                z-index: 2;
+                background-color: white;
+            }
+            
+            .header-container {
+                position: absolute;
+                left: 65px;
+                top: 13px;
+                overflow: hidden;
+            }
+            
+            .header-container img {
+                width: 100px;
+                height: 80px;
+                border: 0;
+                outline: 0;
+                vertical-align: middle;
+            }
+            
+            .header-container span {
+                vertical-align: middle;
+                font-family: 'SWL1';
+                display: inline-block;
+                margin-left: 15px;
+                vertical-align: middle;
+                font-size: 30px;
+            }
+            /* ===========================calender-box======================================== */
+            
+            .head-container.tools {
+                position: absolute;
+                right: 60px;
+                top: 25px;
+                z-index: 1;
+            }
+            
+            .tools .calender-box {
+                position: relative;
+                display: inline-block;
+                padding-right: 52px;
+                vertical-align: middle;
+                font-size: 20px;
+                font-weight: 700;
+                left: 80%;
+                top: 45px;
+            }
+            /* ============================================================================================ */
+            /* ==================================导航栏====================================================== */
+            
+            .nav-mod {
+                margin: 0 auto;
+                height: 0;
+                margin-top: 0;
+                z-index: 10;
+                text-align: center;
+                position: relative;
+            }
+            
+            @media screen and (min-width:751px) {
+                .nav-mod:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 70px;
+                    border-top: 1px solid #dadada;
+                }
+            }
+            
+            .head {
+                text-align: center;
+                position: relative;
+                background-color: white;
+            }
+            
+            #mainmenu {
+                display: inline-block;
+                font-family: 'SWL1';
+                font-size: 15px;
+                margin: 0 auto;
+                float: none;
+                padding-right: 30px;
+                height: 70px;
+            }
+            
+            #mainmenu ul {
+                margin: 0px 0px;
+                padding: 0px 0px;
+                height: 30px;
+                letter-spacing: 200;
+            }
+            
+            #mainmenu li {
+                margin: 0px 0px;
+                padding: 0px 0px;
+                display: inline;
+                list-style: none;
+                position: relative;
+            }
+            /* mainmenu 设置 a标签 */
+            
+            #mainmenu a {
+                display: inline-block;
+                padding: 25px;
+                line-height: 35px;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                outline: none;
+                font-size: 40px;
+                font-weight: 30px;
+            }
+            /* mainmenu 设置 span标签 */
+            
+            #mainmenu a span {
+                display: inline-block;
+                margin-left: 10px;
+                padding: 3px 5px 1px 5px;
+                font-size: 10px;
+                text-transform: uppercase;
+                line-height: 15px;
+                border-radius: 3px;
+                border: 1px solid red;
+                background-color: red;
+                color: aliceblue;
+                border-radius: 5px 5px 5px 5px;
+            }
+            
+            #mainmenu li li a span {
+                float: right;
+                margin-top: 9px;
+            }
+            /* 添加 active 行为 */
+            
+            #mainmenu a.active span {
+                width: 100%;
+                margin-left: 0%;
+            }
+            
+            .header-light #mainmenu>li>a {
+                color: #222;
+                opacity: 0.1;
+            }
+            
+            #mainmenu li li {
+                font-size: 13px;
+            }
+            
+            #mainmenu li li:last-child {
+                border-bottom: none;
+            }
+            
+            #mainmenu li li a {
+                padding: 2px 15px 2px 15px;
+                background: #171A21;
+                border-top: none;
+                color: #ccc;
+                width: 100%;
+                border-left: none;
+                text-align: left;
+                font-weight: normal;
+                border-bottom: solid 1px rgba(255, 255, 255, .1);
+            }
+            
+            #mainmenu li li a:hover {
+                color: #111;
+            }
+            
+            #mainmenu li li a:after {
+                content: none;
+            }
+            
+            #mainmenu li li li a {
+                padding: 2px 15px 2px 15px;
+                background: #171A21;
+            }
+            
+            #mainmenu li li a:hover,
+            #mainmenu ul li:hover>a {
+                color: #fff;
+                background: #1a8b49;
+            }
+            
+            #mainmenu li ul {
+                width: 210px;
+                height: auto;
+                position: absolute;
+                top: 35px;
+                left: 0px;
+                z-index: 10;
+                visibility: hidden;
+                opacity: 0;
+            }
+            
+            ul::after,
+            ul::before {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            
+            #mainmenu li li {
+                display: block;
+                float: none;
+                text-transform: none;
+            }
+            
+            #mainmenu li:hover>ul {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 0px;
+            }
+            
+            #mainmenu li ul ul {
+                left: 100%;
+                top: 0px;
+            }
+            
+            #mainmenu li ul ul li a {
+                background: #202020;
+            }
+            
+            #mainmenu li:hover>ul {
+                color: #1a8b49;
+            }
+            
+            #mainmenu select {
+                padding: 10px;
+                height: 36px;
+                font-size: 14px;
+                border: none;
+                background: #ff4200;
+                color: #eceff3;
+            }
+            
+            #mainmenu select option {
+                padding: 10px;
+            }
+            
+            #mainmenu>li ul.mega {
+                position: fixed;
+                left: 0;
+                height: 0%;
+                width: 100%;
+                visibility: hidden;
+                opacity: 0;
+                overflow: hidden;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            
+            #mainmenu li:hover ul.mega {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            #mainmenu li ul.mega>li,
+            #mainmenu li ul.mega>li a {
+                width: 100%;
+            }
+            
+            #mainmenu li ul.mega li.title {
+                padding: 0px 10px 15px 10px;
+                text-align: left;
+                color: #fff;
+                font-weight: bold;
+            }
+            
+            #mainmenu li ul.mega>li ul {
+                position: static;
+                visibility: visible;
+                opacity: 1;
+                left: 0;
+                float: none;
+                width: 100%;
+            }
+            
+            #mainmenu ul.mega>li ul li {
+                margin: 0;
+                padding: 0;
+            }
+            
+            #mainmenu ul.mega>li ul li:last-child {
+                border-bottom: solid 1px #333333;
+            }
+            
+            #mainmenu li ul.mega .menu-content {
+                background: #171A21;
+                padding: 30px;
+            }
+            /* ============================================================================================== */
+            /* =============================================图片============================================ */
+            
+            #Background1-setting {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 400px;
+                margin: 0 auto;
+                z-index: 0;
+            }
+            /* .................... 轮播图 ================================= */
+            
+            .wrap {
+                width: 100%;
+                height: 400px;
+                position: relative;
+            }
+            
+            .list {
+                width: 100%;
+                height: 400px;
+                list-style: none;
+                padding-left: 0px;
+                position: relative;
+                z-index: 3;
+            }
+            
+            .item {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-size: 50px;
+                top: -12px;
+                opacity: 0;
+                transition: all 2s;
+            }
+            
+            .item:nth-child(1) {
+                background: url(./中华古风.jpg) no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            
+            .item:nth-child(2) {
+                background: url(./古代文化.jpg) no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            
+            .item:nth-child(3) {
+                background: url(./古代文化1.jpg) no-repeat;
+                background-size: cover;
+            }
+            
+            .item:nth-child(4) {
+                background: url(./古代文化2.jpg) no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            
+            .item:nth-child(5) {
+                background: url(./古代文化3.jpg) no-repeat;
+                background-position: center center;
+                background-size: cover;
+            }
+            
+            .btn {
+                color: white;
+                width: 50px;
+                height: 100px;
+                position: absolute;
+                top: 150px;
+                z-index: 100;
+                top: 120px;
+                background-color: black;
+                opacity: 0.4;
+            }
+            
+            #goPre {
+                left: 0px;
+            }
+            
+            #goNext {
+                right: 0px;
+            }
+            
+            .item.active {
+                z-index: 10;
+                opacity: 1;
+            }
+            
+            .pointlist {
+                padding-left: 0;
+                list-style: none;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                z-index: 1000;
+            }
+            
+            .point {
+                width: 8px;
+                height: 8px;
+                background-color: rgba(0, 0, 0, 0.4);
+                border-radius: 100%;
+                float: left;
+                margin-right: 14px;
+                border-style: solid;
+                border-width: 2px;
+                border-color: rgba(255, 255, 255, 0.6);
+                cursor: pointer;
+            }
+            
+            .point.active {
+                background-color: #07c5f5;
+            }
+            
+            .bar {
+                width: 50px;
+                height: 10px;
+                border: 5px splid #fff;
+                margin: 6px;
+                cursor: pointer;
+                transition: 0.4s;
+                border: 1;
+                z-index: 3;
+            }
+            /* ======================================中间部分==================================================== */
+            
+            .x-wrap {
+                position: relative;
+                width: 1230px;
+                height: auto;
+                margin: auto;
+            }
+            
+            .x-wrap:after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            
+            .middle-part.txtb {
+                width: 100%;
+                height: 50px;
+                float: left;
+            }
+            
+            .txtb span {
+                line-height: 44px;
+                margin-top: 60px;
+                left: 45%;
+                position: absolute;
+                font-size: 40px;
+                font-weight: 600;
+            }
+            
+            .txtb span::before,
+            .txtb span::after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 44px;
+                vertical-align: top;
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/png7.png) no-repeat;
+            }
+            
+            .txtb span::before {
+                background-position: left;
+                margin-right: 18px;
+            }
+            
+            .txtb span::after {
+                background-position: right;
+                margin-left: 18px;
+            }
+            /* =======================================First-Box========================= */
+            
+            .middle-part.list-mod1 {
+                margin-bottom: 90px;
+            }
+            
+            .list-mod1 {
+                overflow: hidden;
+            }
+            
+            .list-mod1 .dl {
+                padding: 5px 0 10px;
+            }
+            
+            .list-mod1 .dt {
+                margin-bottom: 19px;
+                margin-top: 4px;
+            }
+            
+            .dt span {
+                display: inline-block;
+                margin-left: 10px;
+                padding: 3px 5px 1px 5px;
+                text-transform: uppercase;
+                line-height: 55px;
+                border-radius: 3px;
+                border: 1px solid red;
+                background-color: red;
+                color: aliceblue;
+                border-radius: 15px 15px 15px 15px;
+                font-size: 50px;
+                font-weight: 500;
+            }
+            
+            .list-mod1.dl {
+                margin-top: 60px;
+                position: absolute;
+            }
+            
+            .list-mod1 span {
+                margin-bottom: 19px;
+                font-size: 50px;
+                font-weight: 600;
+                margin-top: 60px;
+            }
+            
+            .list-mod1 .dd {
+                margin-left: -15px;
+                overflow: hidden;
+                font-family: "微软雅黑";
+            }
+            
+            .list-mod1 .box {
+                float: left;
+                margin-bottom: 15px;
+                margin-left: 15px;
+                width: 400px;
+                height: 230px;
+                background-color: #fff;
+                overflow: hidden;
+            }
+            
+            .list-mod1 .xlabel {
+                position: relative;
+                padding: 22px 0 21px;
+                color: #fff;
+                overflow: hidden;
+            }
+            
+            .list-mod1 .xlabel:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                border-top: 1px solid #d8d8d8;
+            }
+            
+            .list-mod1 .xlabel:after {
+                content: '';
+                position: relative;
+                float: left;
+                width: 22px;
+                height: 23px;
+                background: url(./image/temp/png22.png) no-repeat;
+                top: 8px;
+            }
+            /* ............................ BOX1 一阶标题中 标题字体                         */
+            
+            .list-mod1 .xlabel .s {
+                position: relative;
+                float: left;
+                font-size: 30px;
+                padding: 1px 12px 1px 15px;
+                background-color: #9a2929;
+            }
+            /* ===================================================================================== */
+            
+            .list-mod1 .cont {
+                padding-left: 30px;
+                padding-right: 25px;
+                height: 130px;
+                position: relative;
+            }
+            
+            .list-mod1 .h16 {
+                margin-bottom: 13px;
+                line-height: 1.375;
+                font-weight: 600;
+            }
+            
+            .list-mod1 .p {
+                color: #707070;
+                line-height: 2;
+                font-weight: 700;
+            }
+            
+            .list-mod1 .h16:hover {
+                color: #9a2929;
+            }
+            
+            .list-mod1 .t_more {
+                position: absolute;
+                left: 30px;
+                bottom: 0;
+            }
+            
+            .t_more:before,
+            .t_more:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 21px;
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/horn21_b.png) no-repeat;
+            }
+            
+            .t_more:after {
+                margin-right: 20px;
+                background-position: right top;
+            }
+            
+            .t_more:before {
+                margin-left: -18px;
+                background-position: left top;
+            }
+            
+            .t_head {
+                margin-top: 20px;
+                position: relative;
+                padding: 36px 0 40px;
+                font-family: 'fzqkbysjw';
+                text-align: center;
+            }
+            
+            .t_head .h30 {
+                line-height: 44px;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            /*.t_head .h30 br{ display:none; }*/
+            
+            .t_head .h30:before,
+            .t_head .h30:after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 44px;
+                vertical-align: top;
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/png7.png) no-repeat;
+            }
+            
+            .t_head.white .h30:before,
+            .t_head.white .h30:after {
+                background-image: url(../image/temp/png8.png);
+            }
+            
+            .t_head.blue .h30:before,
+            .t_head.blue .h30:after {
+                background-image: url(../image/temp/png75.png);
+            }
+            
+            .t_head .h30:before {
+                background-position: left;
+                margin-right: 18px;
+            }
+            
+            .t_head .h30:after {
+                background-position: right;
+                margin-left: 18px;
+            }
+            
+            .t_head .bp-inner {
+                width: 170px;
+            }
+            
+            .t_head .tab-box {
+                margin-top: 32px;
+            }
+            
+            .t_head .tab-link {
+                margin: 0 18px;
+            }
+            
+            .t_line {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 17px;
+            }
+            
+            .t_line .bd {
+                position: absolute;
+                left: 30px;
+                right: 30px;
+                bottom: 5px;
+                border-top: 1px solid #d8d8d8;
+            }
+            
+            .t_line:before,
+            .t_line:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 30px;
+                height: 17px;
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/png21.png) no-repeat;
+            }
+            
+            .t_line:before {
+                left: 0;
+                background-position: left;
+            }
+            
+            .t_line:after {
+                right: 0;
+                background-position: right;
+            }
+            /* ===========================     唐朝文化    ============================ */
+            
+            .x-wrap1 {
+                position: absolute;
+                width: 1230px;
+                margin: auto;
+                top: 50%px;
+            }
+            
+            .x-wrap1:after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            
+            .t_head1 {
+                margin-top: 1000px;
+                position: relative;
+                padding: 36px 0 40px;
+                font-family: 'fzqkbysjw';
+                text-align: center;
+            }
+            
+            .t_head1 .h30 {
+                line-height: 44px;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            /*.t_head .h30 br{ display:none; }*/
+            
+            .t_head1 .h30:before,
+            .t_head1 .h30:after {
+                content: '';
+                display: inline-block;
+                width: 22px;
+                height: 44px;
+                vertical-align: top;
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/png7.png) no-repeat;
+            }
+            
+            .t_head1.white .h30:before,
+            .t_head1.white .h30:after {
+                background-image: url(../image/temp/png8.png);
+            }
+            
+            .t_head1.blue .h30:before,
+            .t_head1.blue .h30:after {
+                background-image: url(../image/temp/png75.png);
+            }
+            
+            .t_head1 .h30:before {
+                background-position: left;
+                margin-right: 18px;
+            }
+            
+            .t_head1 .h30:after {
+                background-position: right;
+                margin-left: 18px;
+            }
+            
+            .t_head1 .bp-inner {
+                width: 170px;
+            }
+            
+            .t_head1 .tab-box {
+                margin-top: 32px;
+            }
+            
+            .t_head1 .tab-link {
+                margin: 0 18px;
+            }
+            
+            .t_line {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 17px;
+            }
+            
+            .t_line .bd {
+                position: absolute;
+                left: 30px;
+                right: 30px;
+                bottom: 5px;
+                border-top: 1px solid #d8d8d8;
+            }
+            
+            .t_line:before,
+            .t_line:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 30px;
+                height: 17px;
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/png21.png) no-repeat;
+            }
+            
+            .t_line:before {
+                background-position: left;
+            }
+            
+            .t_line:after {
+                right: 0;
+                background-position: right;
+            }
+            /* ==========================test */
+            
+            .x-footer {
+                background: url(http://www.ihchina.cn/Public/static/themes/image/temp/png14.png);
+                font-family: "微软雅黑";
+                color: #333;
+                line-height: 1.8;
+            }
+            
+            .x-footer .other-site {
+                padding: 102px 0 88px;
+            }
+            
+            .x-footer .other-site .h22 {
+                margin-bottom: 32px;
+            }
+            
+            .x-footer .left {
+                float: left;
+                margin-right: 110px;
+                width: 425px;
+            }
+            
+            .x-footer .left .ul {
+                height: 100px;
+            }
+            
+            .x-footer .left .li {
+                margin-bottom: 5px;
+            }
+            
+            .x-footer .right {
+                overflow: hidden;
+            }
+            
+            .x-footer .right .ul {
+                margin-right: -50px;
+                overflow: hidden;
+            }
+            
+            .x-footer .right .li {
+                float: left;
+                width: 60px;
+                margin-bottom: 5px;
+                margin-right: 20px;
+            }
+            
+            .x-footer .about-site {
+                padding-top: 55px;
+                border-top: 1px solid #d8d8d8;
+                text-align: center;
+            }
+            
+            .x-footer .link {
+                display: inline-block;
+                margin-bottom: 22px;
+                vertical-align: middle;
+                overflow: hidden;
+            }
+            
+            .x-footer .link-item {
+                position: relative;
+                float: left;
+                padding: 0 18px;
+            }
+            
+            .x-footer .link-item+.link-item:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 7px;
+                border-left: 1px solid #c7c7c7;
+            }
+            
+            .x-footer .link .s {
+                padding: 1px 0;
+            }
+            
+            .x-footer .cont {
+                margin-bottom: 35px;
+            }
+            
+            .x-footer .cont .s+.s {
+                margin-left: 35px;
+            }
+            
+            .x-footer .cont br~.s {
+                margin-left: 0;
+            }
+            
+            .x-footer .slot {
+                height: 100px;
+            }
+            
+            .x-footer .slot-item {
+                will-change: top, bottom;
+                /*	transition: top .4s cubic-bezier(0,.68,.86,.98),  bottom .4s cubic-bezier(0,.68,.86,.98);*/
+            }
+            
+            .x-footer .slot-item.s1 {
+                top: 40%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s2 {
+                top: 75%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s3 {
+                top: 20%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s4 {
+                top: 42%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s5 {
+                top: 72%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s6 {
+                top: 42%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s7 {
+                top: 12%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s8 {
+                top: 62%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s9 {
+                top: 22%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s10 {
+                top: 0%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s11 {
+                top: 42%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s12 {
+                top: 62%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s13 {
+                top: 40%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s14 {
+                top: 72%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s15 {
+                top: 62%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s16 {
+                top: 90%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s17 {
+                top: 40%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s18 {
+                top: 85%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s19 {
+                top: 50%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s20 {
+                top: 66%;
+                bottom: 0;
+            }
+            
+            .x-footer .slot-item.s21 {
+                top: 15%;
+                bottom: 0;
+            }
+            
+            .x-footer .ftbj {
+                padding-left: 40px;
+            }
+            
+            .x-footer .red {
+                color: #9a2929;
+            }
+            
+            .x-footer .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+            .x-footer .mCSB_scrollTools .mCSB_draggerRail {
+                background-color: #cfcfcf;
+            }
+            
+            .x-footer a:hover {
+                color: #9a2929;
+            }
+            
+            .x-footer.sp {
+                color: #9eabbd;
+            }
+            
+            .x-footer.sp .about-site {
+                border: 0 none;
+            }
+            
+            .x-footer.sp2 {
+                background: #aa2e2e;
+                color: #fff;
+            }
+            
+            .x-footer.sp2 .about-site {
+                border: 0 none;
+            }
+            
+            .x-footer.sp2 a:hover {
+                color: #d8b87f;
+            }
+            
+            .x-footer.sp3 {
+                background: #aa2e2e url(../image/temp/img238.jpg) center top no-repeat;
+                color: #fff;
+            }
+            
+            .x-footer.sp3 .about-site {
+                border: 0 none;
+            }
+            
+            .x-footer.sp3 a:hover {
+                color: #d8b87f;
+            }
+            
+            .x-footer.sp4 {
+                background-image: url(../image/temp/img212.jpg);
+                color: #fff;
+            }
+            
+            .x-footer.sp4 .about-site {
+                border: 0 none;
+            }
+            
+            .x-footer.sp4 a:hover {
+                color: #d8b87f;
+            }
+            
+            .slot {
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            .slot-track {
+                position: relative;
+                float: left;
+                width: 4.76%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            .slot-track:first-child {
+                width: 4.8%;
+            }
+            
+            .slot-item {
+                position: relative;
+                height: 100%;
+            }
+            
+            .slot-item.s1 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c1.png);
+            }
+            
+            .slot-item.s2 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c2.png);
+            }
+            
+            .slot-item.s3 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c3.png);
+            }
+            
+            .slot-item.s4 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c4.png);
+            }
+            
+            .slot-item.s5 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c5.png);
+            }
+            
+            .slot-item.s6 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c6.png);
+            }
+            
+            .slot-item.s7 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c7.png);
+            }
+            
+            .slot-item.s8 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c8.png);
+            }
+            
+            .slot-item.s9 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c9.png);
+            }
+            
+            .slot-item.s10 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c10.png);
+            }
+            
+            .slot-item.s11 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c11.png);
+            }
+            
+            .slot-item.s12 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c12.png);
+            }
+            
+            .slot-item.s13 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c13.png);
+            }
+            
+            .slot-item.s14 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c14.png);
+            }
+            
+            .slot-item.s15 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c15.png);
+            }
+            
+            .slot-item.s16 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c16.png);
+            }
+            
+            .slot-item.s17 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/17.png);
+            }
+            
+            .slot-item.s18 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c18.png);
+            }
+            
+            .slot-item.s19 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c19.png);
+            }
+            
+            .slot-item.s20 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c20.png);
+            }
+            
+            .slot-item.s21 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c21.png);
+            }
+            
+            .slot-item.s22 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c22.png);
+            }
+            
+            .slot-item.s23 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c23.png);
+            }
+            
+            .slot-item.s24 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c24.png);
+            }
+            
+            .slot-item.s25 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c25.png);
+            }
+            
+            .slot-item.s26 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c26.png);
+            }
+            
+            .slot-item.s27 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/27.png);
+            }
+            
+            .slot-item.s28 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c28.png);
+            }
+            
+            .slot-item.s29 {
+                background-image: url(.http://www.ihchina.cn/Public/static/themes/image/temp/c29.png);
+            }
+            
+            .slot-item.s30 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c30.png);
+            }
+            
+            .slot-item.s31 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c31.png);
+            }
+            
+            .slot-item.s32 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c32.png);
+            }
+            
+            .slot-item.s33 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c33.png);
+            }
+            
+            .slot-item.s34 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c34.png);
+            }
+            
+            .slot-item.s35 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c35.png);
+            }
+            
+            .slot-item.s36 {
+                background-image: url(.http://www.ihchina.cn/Public/static/themes/image/temp/c36.png);
+            }
+            
+            .slot-item.s37 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c37.png);
+            }
+            
+            .slot-item.s38 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c38.png);
+            }
+            
+            .slot-item.s39 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c39.png);
+            }
+            
+            .slot-item.s40 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c40.png);
+            }
+            
+            .slot-item.s41 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c41.png);
+            }
+            
+            .slot-item.s42 {
+                background-image: url(http://www.ihchina.cn/Public/static/themes/image/temp/c42.png);
+            }
+            /* ========================= 侧边 */
+            
+            .sidebar {
+                position: fixed;
+                right: -55px;
+                top: 30%;
+                z-index: 2;
+                font-family: "微软雅黑";
+                display: none;
+                -webkit-transition: all 0.6s ease;
+                transition: all 0.6s ease;
+                z-index: 1000;
+            }
+            
+            .sidebar .sb-item {
+                position: relative;
+                width: 70px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                box-shadow: 0px 0px 24px 0px rgba(4, 1, 1, 0.32);
+                cursor: pointer;
+                z-index: 1000;
+            }
+            
+            .sidebar .sb-item+.sb-item {
+                margin-top: 5px;
+            }
+            
+            .sidebar .box {
+                position: relative;
+                right: 0;
+                width: 140px;
+                -webkit-transition: right .5s;
+                -ms-transition: right .5s;
+                transition: right .5s;
+            }
+            
+            .sidebar .pop {
+                position: absolute;
+                right: 100%;
+                top: 50%;
+                margin-top: -81px;
+                padding: 29px 33px 29px 29px;
+                background: url(../image/temp/png82.png) no-repeat;
+                display: none;
+            }
+            
+            .sidebar .pop .img {
+                display: block;
+                width: 104px;
+                height: 104px;
+            }
+            
+            .sidebar .ico {
+                padding: 15px;
+                width: 40px;
+                height: 40px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background: url(../image/opacity-50.png);
+                -webkit-box-sizing: content-box;
+                -ms-box-sizing: content-box;
+                box-sizing: content-box;
+                z-index: 1000;
+            }
+            
+            .sidebar .ico img {
+                display: block;
+                width: 100%;
+            }
+            
+            .sidebar .txt {
+                width: 70px;
+                height: 70px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background-color: #9a2929;
+                color: #fff;
+                line-height: 20px;
+                text-align: center;
+                display: none;
+            }
+            
+            .sidebar .sb-wx:hover .ico {
+                display: none;
+            }
+            
+            .sidebar .sb-wx:hover .txt {
+                display: block;
+            }
+            
+            .sidebar .sb-wx:hover .pop {
+                display: block;
+            }
+            
+            .sidebar.x-show {
+                display: block;
+            }
+            
+            .sidebar:hover {
+                right: 0;
+            }
+            /* ========================================================================== */
+            
+            @media screen and (max-width: 750px) {
+                *:before,
+                *:after {
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+                body {
+                    font-size: 0.26rem;
+                    -webkit-overflow-scrolling: touch;
+                }
+                .h30 {
+                    font-size: 0.45rem;
+                }
+                .h28 {
+                    font-size: 0.42rem;
+                }
+                .h26 {
+                    font-size: 0.39rem;
+                }
+                .h24 {
+                    font-size: 0.36rem;
+                }
+                .h22 {
+                    font-size: 0.33rem;
+                }
+                .h20,
+                .h18 {
+                    font-size: 0.3rem;
+                }
+                .h16 {
+                    font-size: 0.28rem;
+                }
+                .p-show {
+                    display: none;
+                }
+                .x-wrap {
+                    width: 100%;
+                    padding: 0 0.25rem;
+                }
+                .x-header,
+                .x-footer,
+                .x-container {
+                    min-width: 320px;
+                }
+                .x-footer .other-site {
+                    padding: 1rem 0;
+                }
+                .x-footer .other-site .h22 {
+                    margin-bottom: 0.3rem;
+                }
+                .x-footer .left {
+                    float: none;
+                    margin-right: 0;
+                    margin-bottom: 0.5rem;
+                    width: 100%;
+                }
+                .x-footer .left .ul {
+                    height: 2rem;
+                }
+                .x-footer .left .li {
+                    margin-bottom: 0.1rem;
+                }
+                .x-footer .right .ul {
+                    margin-right: 0;
+                }
+                .x-footer .right .li {
+                    width: auto;
+                    min-width: 3em;
+                    margin-bottom: 0.1rem;
+                    margin-right: 0.2rem;
+                }
+                .x-footer .about-site {
+                    padding-top: 0.5rem;
+                }
+                .x-footer .link {
+                    margin-bottom: 0.2rem;
+                }
+                .x-footer .link-item {
+                    padding: 0 0.1rem;
+                }
+                .x-footer .link-item+.link-item::before {
+                    height: 0.28rem;
+                }
+                .x-footer .cont {
+                    margin-bottom: 0.3rem;
+                }
+                .x-footer .cont .s {
+                    display: block;
+                }
+                .x-footer .cont .s+.s {
+                    margin-left: 0;
+                }
+                /*	mobile navigation */
+                .nav-mod {
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding-top: 1.5rem;
+                    height: auto;
+                    background-color: #fff;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-transition: transform 0.5s;
+                    transition: transform 0.5s;
+                    -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%);
+                }
+            }
+            /* ===============================  search-box */

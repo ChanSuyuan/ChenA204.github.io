@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'SWletter';
+    src: url('./字体/SW.eot'), url('./字体/SW.woff'), url('./字体/SW.ttf');
+}
+
+@font-face {
+    font-family: 'SWL1';
+    src: url('./字体/日文毛笔字体_0.eot'), url('./字体/日文毛笔字体_0.TTF'), url('./字体/日文毛笔字体_0.woff');
+}
+
+@font-face {
+    font-family: 'SWL2';
+    src: url('./字体/繁.eot'), url('./字体/繁.TTF'), url('./字体/繁.woff');
+}

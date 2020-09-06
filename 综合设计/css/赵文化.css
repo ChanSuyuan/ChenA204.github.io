@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0px;
+    font-family: 'Microsoft JhengHei';
+    font-weight: 580;
+}
+
+.ul,
+ol {
+    list-style: none;
+}
+
+.wrapper {
+    top: 0;
+    width: 900px;
+    /* x y 轴 */
+    margin: 30px 450px;
+    z-index: 100;
+}
+
+video {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    /*加滤镜*/
+    /*filter: blur(15px); //背景模糊设置 */
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter:grayscale(100%); //背景灰度设置*/
+    z-index: -3;
+}
+
+source {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.head-font {
+    font-family: "Microsoft YaHei";
+    z-index: 11;
+}
+
+.head-font span {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 5px 1px 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 35px;
+    border-radius: 3px;
+    border: 1px solid red;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.head {
+    position: absolute;
+    height: 0;
+    margin-top: 0;
+    z-index: 10;
+}
+
+#Background1-setting {
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 10px;
+    left: -10;
+    z-index: -2;
+}
+
+#mainmenu {
+    display: inline-block;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin: 0 auto;
+    float: none;
+    padding-right: 20px;
+    height: 70px;
+}
+
+#mainmenu ul {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    height: 30px;
+}
+
+#mainmenu li {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    float: left;
+    display: inline;
+    list-style: none;
+    position: relative;
+}
+
+
+/* mainmenu 设置 a标签 */
+
+#mainmenu a {
+    display: inline-block;
+    padding: 18px;
+    line-height: 35px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    font-weight: 30px;
+}
+
+
+/* mainmenu 设置 span标签 */
+
+#mainmenu a span {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 5px 1px 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 15px;
+    border-radius: 3px;
+    border: 1px solid red;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#mainmenu li li a span {
+    float: right;
+    margin-top: 9px;
+}
+
+
+/* 添加 active 行为 */
+
+#mainmenu a.active span {
+    width: 100%;
+    margin-left: 0%;
+}
+
+.header-light #mainmenu>li>a {
+    color: #222;
+}
+
+#mainmenu li li {
+    font-size: 13px;
+}
+
+#mainmenu li li:last-child {
+    border-bottom: none;
+}
+
+#mainmenu li li a {
+    padding: 2px 15px 2px 15px;
+    background: #171A21;
+    border-top: none;
+    color: #ccc;
+    width: 100%;
+    border-left: none;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: solid 1px rgba(255, 255, 255, .1);
+}
+
+#mainmenu li li a:hover {
+    color: #111;
+}
+
+#mainmenu li li a:after {
+    content: none;
+}
+
+#mainmenu li li li a {
+    padding: 2px 15px 2px 15px;
+    background: #171A21;
+}
+
+#mainmenu li li a:hover,
+#mainmenu ul li:hover>a {
+    color: #fff;
+    background: #1a8b49;
+}
+
+#mainmenu li ul {
+    width: 210px;
+    height: auto;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#mainmenu li li {
+    display: block;
+    float: none;
+    text-transform: none;
+}
+
+#mainmenu li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+#mainmenu li ul ul {
+    left: 100%;
+    top: 0px;
+}
+
+#mainmenu li ul ul li a {
+    background: #202020;
+}
+
+#mainmenu li:hover>ul {
+    color: #1a8b49;
+}
+
+#mainmenu select {
+    padding: 10px;
+    height: 36px;
+    font-size: 14px;
+    border: none;
+    background: #ff4200;
+    color: #eceff3;
+}
+
+#mainmenu select option {
+    padding: 10px;
+}
+
+#mainmenu .btn-type {
+    padding: 0;
+    margin: 0;
+}
+
+#mainmenu .btn-type a {
+    background: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+#mainmenu>li ul.mega {
+    position: fixed;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#mainmenu li:hover ul.mega {
+    visibility: visible;
+    opacity: 1;
+}
+
+#mainmenu li ul.mega>li,
+#mainmenu li ul.mega>li a {
+    width: 100%;
+}
+
+#mainmenu li ul.mega li.title {
+    padding: 0px 10px 15px 10px;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+}
+
+#mainmenu li ul.mega>li ul {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    float: none;
+    width: 100%;
+}
+
+#mainmenu ul.mega>li ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#mainmenu ul.mega>li ul li:last-child {
+    border-bottom: solid 1px #333333;
+}
+
+#mainmenu li ul.mega .menu-content {
+    background: #171A21;
+    padding: 30px;
+}
+
+.login-box {
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+}
+
+.login-wrapper {
+    /*方框*/
+    position: absolute;
+    opacity: 0.8;
+    /*方框透明度*/
+    border-radius: 20px 20px 20px 20px;
+    top: 72%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+    padding: 60px 40px;
+    background: White;
+    /*The color of the background*/
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    color: Black;
+    box-shadow: 0 15px 30px 0;
+    /* 阴影设置*/
+    z-index: 13;
+}
+
+.form-wrapper span {
+    text-align: right;
+}
+
+.login-wrapper .form-wrapper .h1 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+/* 调整文段对齐 */
+
+.justify {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.form-wrapper span a {
+    display: inline-block;
+    margin-left: 800px;
+    padding: 3px 5px 1px 5px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 35px;
+    border-radius: 3px;
+    border: 1px solid red;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 15px 15px 15px 15px;
+}
